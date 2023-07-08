@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result_AC"
+  >
+
+    <TextView
+        android:id="@+id/retext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textStyle="normal"
+        android:textColor="@color/blu"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"/>
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU WON"
+        android:textColor="@color/blu"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/retext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/win_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/trophy"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/name_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fardeen Khan"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/gold"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp"
+                        android:backgroundTint="@color/blu">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:orientation="vertical">
+                         <androidx.cardview.widget.CardView
+                             android:layout_width="150dp"
+                             android:layout_height="40dp"
+                             android:layout_gravity="center"
+                             app:cardCornerRadius="10dp">
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:text="Score"
+                                 android:textSize="20dp"
+                                 android:gravity="center"
+                                 android:textStyle="bold"/>
+                         </androidx.cardview.widget.CardView>
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:layout_marginTop="10dp"
+                             android:paddingEnd="50dp"
+                             android:orientation="horizontal">
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="Qestion "
+                                 android:textStyle="bold"
+                                 android:layout_gravity="center"/>
+                             <androidx.cardview.widget.CardView
+                                 android:layout_width="70dp"
+                                 android:layout_height="40dp"
+                                 app:cardCornerRadius="10dp"
+                                 android:layout_gravity="center"
+                                 android:layout_marginEnd="10dp">
+                                 <TextView
+                                     android:id="@+id/all_question"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:text="100"
+                                     android:gravity="center"
+                                     android:textColor="@color/black"
+                                     android:textStyle="bold"/>
+                             </androidx.cardview.widget.CardView>
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text=":"
+                                 android:textSize="40dp"
+                                 android:layout_gravity="center"
+                                 android:textColor="@color/white"/>
+                             <androidx.cardview.widget.CardView
+                                 android:layout_width="70dp"
+                                 android:layout_height="40dp"
+                                 android:layout_gravity="center"
+                                 app:cardCornerRadius="10dp"
+                                 android:layout_marginStart="10dp">
+                                 <TextView
+                                     android:id="@+id/right_qustion"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:text="100"
+                                     android:gravity="center"
+                                     android:textColor="@color/black"
+                                     android:textStyle="bold"/>
+                             </androidx.cardview.widget.CardView>
+
+                         </LinearLayout>
+                         <androidx.cardview.widget.CardView
+                             android:layout_width="150dp"
+                             android:layout_height="40dp"
+                             android:layout_marginTop="7dp"
+                             android:layout_gravity="center"
+                             app:cardCornerRadius="10dp">
+
+                         <TextView
+                             android:id="@+id/rank_result"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:text="Rank:100"
+                             android:textSize="20dp"
+                             android:gravity="center"
+                             android:textStyle="bold"/>
+                         </androidx.cardview.widget.CardView>
+                     </LinearLayout>
+]                    </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play_again"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/liner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        app:strokeColor="@color/blu"
+        app:strokeWidth="2dp"
+        android:textColor="@color/blu"
+        app:cornerRadius="10dp"
+        android:text="Play Again"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

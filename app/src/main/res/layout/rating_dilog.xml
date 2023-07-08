@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        app:cardElevation="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/group_1"
+            android:layout_gravity="center"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_imogi"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/third_icon"
+                app:layout_constraintVertical_bias=".13"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/image_imogi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Computer Knowedge"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Rating us"
+                    android:textSize="19dp"
+                    android:layout_gravity="center" />
+
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="27dp"
+                    android:layout_marginStart="27dp"
+                    android:id="@+id/rating"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:orientation="horizontal">
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="120dp"
+                       android:layout_height="60dp"
+                       android:backgroundTint="@color/white"
+                       app:strokeWidth="2dp"
+                       app:strokeColor="@color/blu"
+                       app:cornerRadius="7dp"
+                       android:text="Cancle"
+                       android:textAllCaps="false"
+                       android:textColor="@color/blu"
+                       android:id="@+id/cancel"/>
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_width="120dp"
+                       android:layout_height="60dp"
+                       android:backgroundTint="@color/blu"
+                       app:strokeWidth="2dp"
+                       app:strokeColor="@color/blu"
+                       app:cornerRadius="7dp"
+                       android:layout_marginStart="30dp"
+                       android:textAllCaps="false"
+                       android:text="Rating"
+                       android:textColor="@color/white"
+                       android:id="@+id/Ratingbuten"/>
+               </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

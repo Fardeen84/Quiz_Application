@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "335296147499",
+    "project_id": "computer-knowledge-c5605",
+    "storage_bucket": "computer-knowledge-c5605.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335296147499:android:5071d931fc4bdf871f7a6e",
+        "android_client_info": {
+          "package_name": "com.example.computerknowledge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335296147499-ikl31n7pupv6qfa579f86n4alath11ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXcyi0RJelU1YYXblcj1ztJeWM-sZDBk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335296147499-ikl31n7pupv6qfa579f86n4alath11ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

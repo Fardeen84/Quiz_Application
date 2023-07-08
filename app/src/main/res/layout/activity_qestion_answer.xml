@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qestion_Answer_AC">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quize Name"
+            android:layout_gravity="center"
+            android:textColor="@color/blu"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/currentQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="20dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/totelQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="30dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias=".2"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/option1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:text="Option 1"
+                    app:strokeColor="@color/blu"
+                    android:textAllCaps="false"
+                    app:strokeWidth="2dp"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:tag="1"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/option2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:text="Option 2"
+                    app:strokeColor="@color/blu"
+                    app:strokeWidth="2dp"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:tag="2"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/option3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:text="Option 3"
+                    app:strokeColor="@color/blu"
+                    app:strokeWidth="2dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:tag="3"
+                    app:cornerRadius="10dp"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/option4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    app:strokeColor="@color/blu"
+                    app:strokeWidth="2dp"
+                    android:text="Option 4"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:tag="4"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextQ"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Next"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/gold"
+                app:cornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/liner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias=".2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias=".8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#2296f3"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
